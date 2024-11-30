@@ -1,5 +1,5 @@
 function openWindow() {
-    alert("Hello world!");
+    alert("Заебал, закрой");
  }
 
  

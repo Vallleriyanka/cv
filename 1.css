@@ -1,0 +1,22 @@
+html {
+     font-size: 22px;
+    
+ }
+h1 {
+    font-style: italic;
+}
+body {
+    background-color: #333555;
+    color: whitesmoke;
+    scroll-behavior: smooth;
+}
+
+button, 
+address {
+    margin-top: 26px;
+}
+
+a {
+    display: block;
+    color: beige;
+}
