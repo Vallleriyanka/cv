@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poiret+One&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    background: rgb(6,1,17);
+    background: linear-gradient(20deg, rgba(6,1,17,1) 0%, rgb(43, 35, 103) 50%, rgba(6,1,17,1) 100%);
+    background-size: 400% 400%;
+    animation: gradient 12s ease infinite;
+    color: #ecf0f1;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.title {
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+.container-center {
+    text-align: center;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
