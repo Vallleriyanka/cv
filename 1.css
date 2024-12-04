@@ -1,22 +1,93 @@
-html {
-     font-size: 22px;
-    
- }
-h1 {
-    font-style: italic;
-}
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poiret+One&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
 body {
-    background-color: #333555;
-    color: whitesmoke;
-    scroll-behavior: smooth;
+    font-family: "Source Sans 3", sans-serif;
+    background: rgb(255,137,60);
+    background: linear-gradient(40deg, rgba(255,137,60,1) 0%, rgba(24,50,131,1) 30%, rgba(91,26,122,1) 70%, rgba(165,59,167,1) 100%);background-size: 400% 400%;
+    color: rgb(217, 211, 242);
+    animation: colors 50s linear infinite;
+    backdrop-filter: blur(10px);
+    
+}
+@keyframes colors {
+    0% {
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
 }
 
-button, 
-address {
-    margin-top: 26px;
+.main_header {
+    margin-top: 0;
+    margin-left: 0;
+    padding-bottom: 40px;
 }
 
-a {
-    display: block;
-    color: beige;
+.main_header-container {
+    font-size: 2.26rem;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Roboto';
+    text-transform: uppercase;
+}
+
+.animation {
+    overflow: hidden;
+    height: 50px;
+    margin-left: 1rem;
+}
+
+.animation > div > div {
+    padding: 0.25rem 0.75rem;
+    height: 2.81rem;
+    margin-bottom: 2.81rem;
+    display:inline-block;
+}
+
+.animation div:first-child {
+    animation: text-scroll 8s ease infinite;
+}
+
+.first div {
+    background-color:#20a7d8;
+  }
+  .second div {
+    background-color:#CD921E;
+  }
+  .third div {
+    background-color:#c10528;
+  }
+
+@keyframes text-scroll {
+    0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+
+.avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 70px;
+    border: 2px solid white;
+}
+
+
+.title {
+    font-weight: 600;
+    font-size: 4em;
 }
